@@ -1,0 +1,52 @@
+#topBarContainer {
+  position: static;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 35px;
+}
+
+#homeLogo {
+  border: 1px solid red;
+  width: 35px;
+  right: 0px;
+  align-content: center;
+  text-align: center;
+}
+
+#cartModal {
+  border: 1px solid red;
+  width: 35px;
+  right: 0px;
+  align-content: center;
+  text-align: center;
+}
+
+#mainContainer {
+  border: 3px solid green;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#mainLeftContainer {
+  border: 1px dashed blue;
+  height: 95%;
+  width: 48%;
+}
+
+#mainRightContainer {
+  border: 1px dashed blue;
+  height: 95%;
+  width: 48%;
+}
+
+#reviewsContainer {
+  border: 2px solid orange;
+  height: 175px;
+}
