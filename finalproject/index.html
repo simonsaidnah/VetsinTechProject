@@ -32,14 +32,22 @@
             </div>
             <div id="reviewsAndCartContainer">
                 <div id="cartAddButtonContainer">
-                    Add to Cart
+                    <button onclick="increaseQuantity()">Add to Cart</button>
                 </div>
                 <div id="reviewJumpButtonContainer">
-                    See Reviews
+                    <button>See Reviews</button>
                 </div>
             </div>
             <div id="modal" class="modal">
-                <div id="modalContent">Modal Content</div>
+                <div id="modalContent">
+                    <span id="closeModal">&times;</span>
+                    <span>Price</span>
+                    <div id="price"></div>
+                    <span>Qty</span>
+                    <div id="quantity"></div>
+                    <button id="increase" onclick="increaseQuantity()">increase</button>
+                    <button id="decrease" onclick="decreaseQuantity()">decrease</button>
+                </div>
             </div>
         </div>
     </div>
