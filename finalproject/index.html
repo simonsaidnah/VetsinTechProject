@@ -16,35 +16,39 @@
         </div>
         <!-- cart modal aligned to the right of top bar -->
         <div id="cartModal">
-            cart
+            Cart
         </div>
     </div>
     <div id="mainContainer">
         <div id="mainLeftContainer">
-            Image goes here
+            <img src="./images/nyan.jpeg">
         </div>
         <div id="mainRightContainer">
             <div id="productInfoContainer">
-                <h2>Awesome Product!</h2>
-                Seller: Best Seller
+                <h2>Nyan Cat</h2>
+                Seller: DigitalArt
                 <br>
-                <h2>$3.50</h2>
+                <h2>$4.00</h2>
             </div>
             <div id="reviewsAndCartContainer">
                 <div id="cartAddButtonContainer">
-                    <button onclick="increaseQuantity()">Add to Cart</button>
+                    Add to Cart
                 </div>
                 <div id="reviewJumpButtonContainer">
-                    <button>See Reviews</button>
+                    See Reviews
                 </div>
             </div>
             <div id="modal" class="modal">
                 <div id="modalContent">
                     <span id="closeModal">&times;</span>
+                    My Cart
+                    <br>
+                    <br>
                     <span>Price</span>
                     <div id="price"></div>
-                    <span>Qty</span>
+                    <br>
                     <div id="quantity"></div>
+                    <br>
                     <button id="increase" onclick="increaseQuantity()">increase</button>
                     <button id="decrease" onclick="decreaseQuantity()">decrease</button>
                 </div>
@@ -52,7 +56,10 @@
         </div>
     </div>
     <div id="reviewsContainer">
-        Reviews
+        <span>Reviews</span>
+        <br>
+        <br>
+        No reviews yet!
     </div>
 
     

@@ -10,6 +10,8 @@ let addtoCartButton = document.getElementById('cartAddButtonContainer');
 
 let cartQuantity = 0
 
+let price = 0
+
 document.getElementById("quantity").innerText = cartQuantity;
 
 //modal window display
@@ -25,18 +27,33 @@ closeModalButton.onclick = function() {
 
 //quantity tracking
 
+addtoCartButton.onclick = function () {
+    cartQuantity = cartQuantity + 1;
+    document.getElementById("quantity").innerText = "Qty: " + cartQuantity;
+
+    price = price + 4;
+    document.getElementById("price").innerText = "$" + price + ".00";
+}
+
+
 function increaseQuantity () {
 
     //implement function for incrementing quantity up each time add to cart button is clicked
     cartQuantity = cartQuantity + 1;
-    document.getElementById("quantity").innerText = cartQuantity;
+    document.getElementById("quantity").innerText = "Qty: " + cartQuantity;
+
+    price = price + 4;
+    document.getElementById("price").innerText = "$" + price + ".00";
 };
 
 function decreaseQuantity () {
 
     //implement function for incrementing quantity up each time add to cart button is clicked
     cartQuantity = cartQuantity - 1;
-    document.getElementById("quantity").innerText = cartQuantity;
+    document.getElementById("quantity").innerText = "Qty: " + cartQuantity;
+
+    price = price - 4;
+    document.getElementById("price").innerText = "$" + price + ".00";
 };
     
     // implement function for incrementing quantity up each time increase button is clicked
